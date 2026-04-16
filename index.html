@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cadastro de CPF</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Cadastro de CPF</h1>
+      <form action="#" method="post">
+        <label for="cpf">CPF:</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          placeholder="Digite seu CPF"
+          required
+        />
+        <button id="btn-primary" type="submit">Cadastrar</button>
+      </form>
+      <div class="cpf-list">
+        <h2>CPFs Cadastrados</h2>
+        <ul id="cpf-list"></ul>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
