@@ -38,6 +38,11 @@ form.onsubmit = (event) => {
 function createCPF(cpf) {
   //Criando uma nova lista
   const li = document.createElement("li");
+
+  if (cpf.length <= 11 || cpf.length >= 15) {
+    return alert("Quantidade de números invalidos");
+  }
+
   li.append(cpf);
   cpfList.append(li);
 
